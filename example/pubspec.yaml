@@ -1,0 +1,41 @@
+name: example
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 国际化多语言
+  flutter_localizations:
+    sdk: flutter
+
+  get: 4.3.8
+
+  # 权限控制
+  permission_handler: 10.2.0
+
+  flutter_form_builder: 7.1.1
+
+dependency_overrides:
+  wise_util:
+    path: ..
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Regular                # 字体别名
+      fonts:
+        - asset: assets/fonts/AlibabaSans-Regular.otf # 字体文件目录
+          weight: 700
+    - family: Medium                # 字体别名
+      fonts:
+        - asset: assets/fonts/AlibabaSans-Medium.otf # 字体文件目录
+          weight: 700
+
+flutter_intl:
+  enabled: true
+
